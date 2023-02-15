@@ -97,21 +97,27 @@ const MainHeader = styled(MaxWidthWrapper)`
   justify-content: center;
   align-items: center;
 
+  @media ${QUERIES.tabletAndUp} {
+    margin-block-end: 72px;
+  }
+
   @media ${QUERIES.laptopAndUp} {
     margin-block-start: 0;
+    margin-block-end: 72px;
     justify-content: space-between;
   }
 `;
 
 const SubsciptionWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  margin-block-start: 32px;
+  position: relative;
 `;
 
 const AlreadySubscriberLink = styled.a`
+  position: absolute;
+  margin-block-start: 8px;
+  width: 100%;
+  text-align: center;
+  font-size: 0.875rem;
   font-style: italic;
   text-decoration: underline;
   line-height: 1em;
