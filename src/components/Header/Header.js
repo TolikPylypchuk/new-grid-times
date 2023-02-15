@@ -1,11 +1,12 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 import { Menu, Search, User } from 'react-feather';
-
+// eslint-disable-next-line
 import { QUERIES } from '../../constants';
 
 import MaxWidthWrapper from '../MaxWidthWrapper';
 import Logo from '../Logo';
+// eslint-disable-next-line
 import Button from '../Button';
 
 const Header = () => {
